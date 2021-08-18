@@ -47,8 +47,12 @@ img{
     align-items: center;   
 }
 
-.traitHebergement{
+.traitHebergements{
     border-top: 1px solid #0065fc;
+}
+.marginHebergements{
+    margin-left: 55%;
+
 }
 
 /*barre de recherche*/
