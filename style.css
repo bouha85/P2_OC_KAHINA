@@ -283,3 +283,25 @@ input{
     box-shadow: 5px 5px 5px 1px #f2f2f2;
 }
 
+/*........footer..........*/
+#contenu-footer{
+    height: 220px;
+    margin-top: 100px;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.items-footre{
+    height: 150px;
+}
+.marginItems1{
+    margin-left: 5%; 
+}
+.marginItems3{
+    margin-right: 15%;
+}
+.interAlign{
+    line-height: 150%;
+}
+
