@@ -222,7 +222,7 @@ input{
     padding: 1%;
     border-radius: 20px;
 }
-/*.....bloc populair......*/
+/*.....bloc populaires......*/
 .titreIconePopulaire{
     display: flex;
     justify-content: space-between;
@@ -253,11 +253,12 @@ input{
     border-radius: 20px;
     margin-bottom: 20px;
 }
-.detailPopulaire{
+/*.detailPopulaire{
     display: flex;
     flex-direction: column;
-    justify-self: center;
-}
+    justify-self: center;   
+}*/
+    
 /*...... Activités.....*/
 .activites{
     margin-top: 40px;
