@@ -27,12 +27,15 @@ img{
     width: 120px;
     height: 50px;    
 }
+/*....créer class couleur....*/ 
 .colorBleu{
     color: #0065fc;
 }
 .colorGris{
     color: #f2f2f2;
 }
+
+/*....barre de navigation....*/
 
 .navigation-links{
     display: flex;
@@ -61,7 +64,7 @@ img{
 
 }
 
-/*barre de recherche*/
+/*....barre de recherche....*/
 
 .formulaire{
     display: flex;
