@@ -27,6 +27,9 @@ img{
     width: 120px;
     height: 50px;    
 }
+.colorBleu{
+    color: #0065fc;
+}
 
 .navigation-links{
     display: flex;
@@ -252,8 +255,10 @@ input{
     margin-bottom: 20px;
 }
 .detailPopulaire{
-    padding-left: 30px;
-    
+    padding-left: 30px;   
+}
+.flex-end{
+    align-self: flex-end;
 }
     
 /*...... Activités.....*/
