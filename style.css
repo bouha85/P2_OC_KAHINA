@@ -261,55 +261,19 @@ input{
     margin-bottom: 20px;
 }
 .detailPopulaire{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding-left: 30px;   
 }
-.flex-end{
-    align-self: flex-end;
-}
-    
+
+
 /*...... Activités.....*/
 .activites{
     margin-top: 40px;
     margin-bottom: 40px;
 }
-.blocActivites{
-    width: 100%;
-    height: 600px;
 
-}
-figure{
-    border: 1px solide #f2f2f2;
-    border-radius: 20px 20px 0 0;
-
-}
-.imgActivites1{
-    width: 23%;
-    height: 400px;
-
-}
-/*.blocActivites{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 600px;
-}
-.imgActivites1{
-    object-fit: cover;
-    background-position: center;
-    width: auto;
-    height: 200px;
-    border-radius: 15px 15px  0  0;
-
-}
-.cubeActivites{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 23%;
-    border-radius: 20px;
-    box-shadow: 5px 5px 5px 1px #f2f2f2;
-}
 
 /*........footer..........*/
 #contenu-footer{
