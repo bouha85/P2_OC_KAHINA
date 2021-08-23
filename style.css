@@ -70,7 +70,10 @@ img{
     display: flex;
     justify-content: start;
     align-items: center;
-
+    margin-left: 20px;
+}
+.marginleft{
+    margin-left: 20px;
 }
 .maps{
     color: black;
@@ -111,6 +114,7 @@ input{
     align-items: center;
     margin-top: 50px;
     margin-bottom: 40px;
+    margin-left: 20px;
 }
 .marginfiltreTitre{
     margin-right: 20px;
@@ -158,6 +162,7 @@ input{
 .information{
     display: flex;
     align-items: center;
+    
 }
 .containerInfo {
     display: flex;
@@ -168,6 +173,8 @@ input{
     border: 2px solid #f2f2f2;
     border-radius: 25px;
     margin-right: 5px;
+    margin-left: 20px;
+    
 }
 .iconInfo {
     color: #0065fc;
@@ -182,6 +189,8 @@ input{
     align-items: center;
     margin-bottom: 20px;
     margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     
 } 
 .blocHebergements{
@@ -268,11 +277,107 @@ input{
 }
 
 
+
 /*...... Activités.....*/
 .activites{
+    height: 500px;
     margin-top: 40px;
     margin-bottom: 40px;
+    padding-bottom: 30px;
+
 }
+
+.blocActivites{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 30px 30px 1fr;
+    column-gap: 20px;
+    margin-bottom: 50px;
+
+    
+}
+.itemActivites1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    background-color: white;
+    height: auto;
+    border-radius: 25px;
+
+}
+.imgActivites1{
+    width: 100%;
+    height: 500px;
+    border-radius: 25px 25px 0 0;
+    object-fit: cover;   
+}
+
+
+.itemActivites2{
+    grid-column-start:2 ;
+    grid-column-end:3 ;
+    grid-row-start: 1;
+    grid-row-end:3 ;
+    background-color: white;
+    height: auto;
+}
+.imgActivites2{
+    width: 100%;
+    height: 270px;
+    border-radius: 25px 25px 0 0;   
+}
+.itemActivites3{ 
+    grid-column-start:2 ;
+    grid-column-end:3;
+    grid-row-start: 3;
+    grid-row-end:4 ;
+    border: 1px solide #f2f2f2;
+    background-color: white;
+    height: auto;
+}
+.imgActivites3{
+    width: 100%;
+    height: 150px; 
+    border-radius: 25px 25px 0 0;    
+}
+
+.itemActivites4{
+    grid-column-start:3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    background-color: white;
+    height: auto;
+}
+.imgActivites4{
+    width: 100%;
+    height: 500px;
+    border-radius: 25px 25px 0 0;   
+}
+
+.itemActivites5{
+    grid-column-start:4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: white;
+    height: auto;
+}
+.imgActivites5{
+    width: 100%;
+    height: 150px;
+    border-radius: 25px 25px 0 0; 
+}
+
+.itemActivites6{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    background-color: rgb(121, 39, 89);
+}
+
 
 
 /*........footer..........*/
