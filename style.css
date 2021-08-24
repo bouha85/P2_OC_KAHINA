@@ -280,17 +280,15 @@ input{
 
 /*...... Activités.....*/
 .activites{
-    height: 500px;
+    height: 600px;
     margin-top: 40px;
     margin-bottom: 40px;
-    padding-bottom: 30px;
-
 }
 
 .blocActivites{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 30px 30px 1fr;
+    grid-template-rows: 270px 30px 30px  270px;
     column-gap: 20px;
     margin-bottom: 50px;
 
@@ -318,7 +316,7 @@ input{
     grid-column-start:2 ;
     grid-column-end:3 ;
     grid-row-start: 1;
-    grid-row-end:3 ;
+    grid-row-end: span 2 ;
     background-color: white;
     height: auto;
 }
@@ -330,15 +328,15 @@ input{
 .itemActivites3{ 
     grid-column-start:2 ;
     grid-column-end:3;
-    grid-row-start: 3;
-    grid-row-end:4 ;
+    grid-row-start: 4;
+    grid-row-end: 5;
     border: 1px solide #f2f2f2;
     background-color: white;
     height: auto;
 }
 .imgActivites3{
     width: 100%;
-    height: 150px; 
+    height: 170px; 
     border-radius: 25px 25px 0 0;    
 }
 
@@ -373,11 +371,16 @@ input{
 .itemActivites6{
     grid-column-start: 4;
     grid-column-end: 5;
-    grid-row-start: 3;
-    grid-row-end: 5;
-    background-color: rgb(121, 39, 89);
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: white;
+    height: auto;
 }
-
+.imgActivites6{
+    width: 100%;
+    height: 270px;
+    border-radius: 25px 25px 0 0; 
+}
 
 
 /*........footer..........*/
