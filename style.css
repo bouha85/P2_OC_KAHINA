@@ -4,6 +4,7 @@ body{
     font-family: 'Raleway', sans-serif;
     display: flex;
     flex-direction: column;
+    
 
 }
 ul{
@@ -197,11 +198,10 @@ input{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-
     background-color: #f2f2f2;
     flex: 2;
     height: 670px;
-    margin-right: 20px;
+    margin-right: 50px;
     border-radius: 10px;
     padding-left: 20px;
     padding-right: 20px;
@@ -277,110 +277,72 @@ input{
 }
 
 
-
 /*...... Activités.....*/
 .activites{
-    height: 600px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    
+    margin-top: 20px;
+    margin-bottom: 8px;
 }
 
-.blocActivites{
+.activites ul{
     display: grid;
     justify-content: center;
+    width: 100%;
+    height: 450px;
     grid-template-columns: repeat(4, 25%);
     grid-template-rows: 3fr  0.3fr 0.3fr 0.3fr 3fr;
-    column-gap: 20px;
+    column-gap: 30px;
     margin-bottom: 50px;
-
-    
+    margin-top: 8px;
+    margin-left: 20px;
+    grid-template-areas: 
+    "activites_1 activites_2 activites_4 activites_5"
+    "activites_1 activites_2 activites_4 activites_5"
+    "activites_1 activites_2 activites_4 activites_6"
+    "activites_1 activites_2 activites_4 activites_6"
+    "activites_1 activites_3 activites_4 activites_6"
+    "activites_1 activites_3 activites_4 activites_6";  
 }
-.itemActivites1{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 5;
-    background-color: white;
-    height: auto;
+.activites_1{
+    grid-area: activites_1;
+}
+.activites_2{
+    grid-area: activites_2;
+}
+.activites_3{
+    grid-area: activites_3;
+}
+.activites_4{
+    grid-area: activites_4;
+}
+.activites_5{
+    grid-area: activites_5;
+}
+.activites_6{
+    grid-area: activites_6;
+}
+.activites .itemActivites{
+    position: relative;
+    width: 305px;
+    height: 100%;
     border-radius: 25px;
-
+    box-shadow: 2px 2px 15px -5px rgb(179, 175, 175);
 }
-.imgActivites1{
+.imgActivites{
+    object-fit: cover;
     width: 100%;
-    height: 500px;
+    height: 95%; 
     border-radius: 25px 25px 0 0;
-    object-fit: cover;   
+    margin: 0; 
 }
-
-
-.itemActivites2{
-    grid-column-start:2 ;
-    grid-column-end:3 ;
-    grid-row-start: 1;
-    grid-row-end: span 2 ;
+.titreActivites{
+    position: absolute;
+    width: 95%;
     background-color: white;
-    height: auto;
-}
-.imgActivites2{
-    width: 100%;
-    height: 270px;
-    border-radius: 25px 25px 0 0;   
-}
-.itemActivites3{ 
-    grid-column-start:2 ;
-    grid-column-end:3;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    border: 1px solide #f2f2f2;
-    background-color: white;
-    height: auto;
-}
-.imgActivites3{
-    width: 100%;
-    height: 170px; 
-    border-radius: 25px 25px 0 0;    
-}
-
-.itemActivites4{
-    grid-column-start:3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 5;
-    background-color: white;
-    height: auto;
-}
-.imgActivites4{
-    width: 100%;
-    height: 500px;
-    border-radius: 25px 25px 0 0;   
-}
-
-.itemActivites5{
-    grid-column-start:4;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    background-color: white;
-    height: auto;
-}
-.imgActivites5{
-    width: 100%;
-    height: 150px;
-    border-radius: 25px 25px 0 0; 
-}
-
-.itemActivites6{
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 4;
-    background-color: white;
-    height: auto;
-}
-.imgActivites6{
-    width: 100%;
-    height: 270px;
-    border-radius: 25px 25px 0 0; 
+    /*border: 1px solid #f2f2f2;*/
+    border-radius: 0 0 20px 20px;
+    padding: 20px 0 20px 5%;
+    margin: 0;
 }
 
 
