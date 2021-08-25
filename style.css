@@ -280,6 +280,11 @@ input{
     justify-content: center;
     padding-left: 30px;   
 }
+.cubePopulaire:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 0.6s;
+}
 
 
 /*...... Activités.....*/
