@@ -32,7 +32,12 @@ img{
     width: 120px;
     height: 50px;    
 }
-/*....créer class couleur....*/ 
+main h4{
+        font-size: 16px;
+        font-weight: bold;
+}
+/*....créer class couleur....*/
+
 .colorBleu{
     color: #0065fc;
 }
