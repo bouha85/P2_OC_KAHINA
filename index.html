@@ -35,27 +35,20 @@
 				<p class="marginleft">En plein centre ville ou en plein nature</p>
 				<form class="formulaire" method="POST" action="traitement.php">
 
-					<i class="fas fa-map-marker-alt maps"></i>
+				    <i class="fas fa-map-marker-alt maps"></i>
 					<input class="Recherche" type="text" value="Marseille, France">
-					<input class="bouton" type="submit" value="Rechercher">
+					<button class="bouton" type="submit" >Rechercher</button>
 				</form>
 
-				<div class="filtre">
+				<div class="filtres">
 
-						<h3 class="marginfiltreTitre"> Filtre</h3>
-
-					<div class="iconsTextF"><i class="fas fa-money-bill-wave-alt fa-lg iconsF"></i>
-						<span class="textF">Économique</span>
-					</div>
-					<div class="iconsTextF"> <i class="fas fa-child fa-lg iconsF"></i>
-						<span class=textF>Familial</span>
-					</div>
-					<div class="iconsTextF"><i class="fas fa-heart fa-lg iconsF"></i>
-						<span class="textF">Romantique</span>
-					</div>
-					<div class="iconsTextF"><i class="fas fa-dog fa-lg iconsF"></i>
-						<span class="textF">Animaux autorisés</span>
-					</div>
+						<h3> Filtre</h3>
+						<ul class="filters_ul">
+							<li class="filters_button"><i class="fas fa-money-bill-wave-alt fa-lg icon_filter"></i> Économique</li>
+							<li class="filters_button"><i class="fas fa-child fa-lg icon_filter"></i> Familial</li>           
+							<li class="filters_button"><i class="fas fa-heart fa-lg icon_filter"></i> Romantique</li>
+							<li class="filters_button"><i class="fas fa-dog fa-lg icon_filter"></i> Animaux autorisés</li>
+						</ul>
 				</div>
 				<div class="information">
 					<div class="containerInfo"><i class="fas fa-info fa-xs iconInfo"></i></div>
