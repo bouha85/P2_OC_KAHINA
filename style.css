@@ -436,6 +436,13 @@ input{
 @media screen and (max-width:1440px) {
     .container{
         display: block;
+    
+    }
+    header, .descriptionHebergement{
+        margin-left: 2%;
+    }
+    #logo{
+        margin-left: -2%;
     }
     .hotels{
         display: grid;
@@ -465,6 +472,17 @@ input{
     .cubePopulaire> .imgPopulaire{
         height: auto;
     }
-    
+    .blocPopulaires{
+        display: grid;
+        width: 100%;
+        height: 100%;
+        margin-top: 1.5%;
+    }
+    .titreIconePopulaire{
+        margin-right: 30px;
+    }
+    .titrePopulaire{
+        margin-left: 10px;
+    }
 }
 
