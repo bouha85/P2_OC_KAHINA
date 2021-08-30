@@ -223,7 +223,7 @@ input{
 .blocHebergements{
     display: grid;
     background-color: #f2f2f2;
-    height: 625px;
+    height: 625px;  
     border-radius: 25px;
     min-width: 375px;
     width: auto;
@@ -294,7 +294,7 @@ input{
     justify-content: center;
     background-color: #f2f2f2;
     border-radius: 25px;
-    height: auto;
+    height: auto;                 /*....avant d'appliquer les média queries sa valeur est 625px....*/
     padding-left: 20px;
     padding-right: 20px;
     margin-left: 2.4%;  
@@ -446,6 +446,7 @@ input{
     }
     .hotels{
         display: grid;
+        grid-template-columns: 1fr;
         grid-template-rows: 0.5fr 3fr;
         row-gap: 3%;
         grid-template-areas:
@@ -453,7 +454,7 @@ input{
         "blocHebergements";
     }
     .blocHebergements{
-        grid-area: blocHerbergements;
+        grid-area: blocHebergements;
     }
     .blocPopulaires{
         grid-area: blocPopulaires;
@@ -474,7 +475,7 @@ input{
     }
     .blocPopulaires{
         display: grid;
-        width: 100%;
+        width: 95%;
         height: 100%;
         margin-top: 1.5%;
     }
@@ -483,6 +484,25 @@ input{
     }
     .titrePopulaire{
         margin-left: 10px;
+    } 
+    .blocHebergements{
+        width: 100%;
+        margin-left: 1.5%;
+    }
+    .blocHebergements_marseille{
+        width: 98%;
+        justify-content: space-evenly;
+        margin-left: 1.5%;
+    }
+    .cubeHebergement{
+        display: flex;
+        width: 80%;
+        height: 175px;
+    }
+    .cubeHebergement> .imgHebergements{
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
     }
 }
 
