@@ -294,7 +294,7 @@ input{
     justify-content: center;
     background-color: #f2f2f2;
     border-radius: 25px;
-    height: 625px;
+    height: auto;
     padding-left: 20px;
     padding-right: 20px;
     margin-left: 2.4%;  
@@ -433,9 +433,37 @@ input{
 }
 
 /*.....Média Queries.....*/
-@media screen and (max-width:1400px) {
+@media screen and (max-width:1440px) {
     .container{
         display: block;
+    }
+    .hotels{
+        display: grid;
+        grid-template-rows: 0.5fr 3fr;
+        row-gap: 3%;
+        grid-template-areas:
+        "blocPopulaires"
+        "blocHebergements";
+    }
+    .blocHebergements{
+        grid-area: blocHerbergements;
+    }
+    .blocPopulaires{
+        grid-area: blocPopulaires;
+    }
+    .blocPopulaires ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 1fr;
+    }
+    .titreIconePopulaire{
+        margin-right: 10%;
+    }
+    .cubePopulaire{
+        height: 80%;
+    }
+    .cubePopulaire> .imgPopulaire{
+        height: auto;
     }
     
 }
