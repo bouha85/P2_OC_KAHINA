@@ -550,7 +550,29 @@ input{
     }
     #contenu-footer{
         margin-top: -3%;
+    }   
+}
+@media screen and (max-width: 1200px){
+     #logo{
+         margin-left: -2%;
+     }
+    .filtres ul li{
+        margin-left: 12px;
     }
+    .blocHebergements{
+        width: 99%;
+    }
+    .activites{
+        width: 97%;
+    }
+    .contenu-footer{
+        width: 100%;
+    } 
+    .items-footre{
+        padding-left: 2%;
+    }  
+}
+@media screen and (max-widht: 900px) {
     
 }
 
