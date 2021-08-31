@@ -361,7 +361,7 @@ input{
     margin-top: 8px;
     grid-template-areas: 
     "activites_1 activites_2 activites_4 activites_5"
-    "activites_1 activites_3 activites_4 activites_6"
+    "activites_1 activites_3 activites_4 activites_6";
 }
 .activites_1{
     grid-area: activites_1;
@@ -387,7 +387,7 @@ input{
     flex-direction: column;
     justify-content: center;
     border-radius: 25px;
-    box-shadow: 2px 2px 15px -5px rgb(179, 175, 175);
+    box-shadow: 2px 2px 12px -5px rgb(179, 175, 175);
     margin: 0;
     padding: 0;
 }
@@ -436,7 +436,6 @@ input{
 @media screen and (max-width:1440px) {
     .container{
         display: block;
-    
     }
     header, .descriptionHebergement{
         margin-left: 2%;
@@ -486,8 +485,7 @@ input{
         margin-left: 10px;
     } 
     .blocHebergements{
-        width: 100%;
-        margin-left: 1.5%;
+        width: 100%; 
     }
     .blocHebergements_marseille{
         width: 98%;
@@ -498,11 +496,61 @@ input{
         display: flex;
         width: 80%;
         height: 175px;
+        margin-left: 15px;
     }
     .cubeHebergement> .imgHebergements{
         width: 100%;
         height: 100px;
         object-fit: cover;
     }
+    .activites{
+        width: 100%;
+        margin-top: -25rem;
+        margin-bottom: 12%;
+        padding-top: 5%;
+    }
+    .activites ul{
+        display: grid;
+        width: 105%;/* c'est normal ou pas*/
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "activites_1 activites_2 activites_4"
+        "activites_5 activites_3 activites_6";
+    }
+    .activites .itemActivites{
+        display: block;
+        width: 90%;
+        height: 240px;
+    }
+    .titreActivites{
+        margin-left: 3%;
+    }
+    .activites_1{
+        grid-area: activites_1;
+    }
+    
+    .activites_3{
+        grid-area: activites_3;
+    }
+    .activites_4{
+        grid-area: activites_4;
+    }
+    .activites_5{
+        grid-area: activites_5;
+    }
+    .activites_6{
+        grid-area: activites_6;
+    }
+    .imgActivites{
+        height: 180px;
+    }
+    .items-footre{
+        padding-left: 5.5%;
+    }
+    #contenu-footer{
+        margin-top: -3%;
+    }
+    
 }
 
