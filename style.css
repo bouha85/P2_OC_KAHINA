@@ -202,7 +202,7 @@ input{
 }
  
 
-/*.....plocHebergements.....*/
+/*.....plocHebergements avec Flexbox et Css grid.....*/
 
 
 .hotels{
@@ -216,6 +216,7 @@ input{
 }
 .blocHebergements{/*est ce que je doit rajouter display:grid*/
     background-color: #f2f2f2;
+    width: 70%;
     height: 625px;  
     border-radius: 25px;
     min-width: 375px;
@@ -224,7 +225,7 @@ input{
 }
 .blocHebergements_marseille{
     display: grid;
-    width: 880px;
+    
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1fr;
     align-items: center;
@@ -236,7 +237,6 @@ input{
 .blocHebergements_marseille img{
      width: 240px;
      height: 115px;
-     background-size: 100% 100%;
      border-radius: 15px 15px 0 0;
  } 
 
@@ -270,7 +270,7 @@ input{
 }
 
 
-/*.....bloc populaires......*/
+/*.....bloc populaires avec Flexbox......*/
 
 
 .titreIconePopulaire{
@@ -285,6 +285,7 @@ input{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 30%;
     background-color: #f2f2f2;
     border-radius: 25px;
     height: 625px;             
@@ -316,9 +317,10 @@ figure .cubePopulaire{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 160px;
+    width: 220px;
     line-height: 80%;
-    padding-left: 20px;  
+    padding-left: 20px;
+    margin-left: 10px;  
 }
 .cubePopulaire:hover{
     cursor: pointer;
@@ -327,7 +329,7 @@ figure .cubePopulaire{
 }
 
 
-/*...... Activités.....*/
+/*...... Activités avec Css grid.....*/
 
 
 .activites{
@@ -406,7 +408,7 @@ figure .itemActivites{
 }
 
 
-/*.....footer.....*/
+/*.....footer avec flexbox.....*/
 
 
 #contenu-footer{
