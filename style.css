@@ -2,8 +2,6 @@
 
 body{
     font-family: 'Raleway', sans-serif;
-    display: flex;
-    flex-direction: column;
     margin: 0;
     padding: 0;
 }
@@ -18,17 +16,12 @@ ul{
 li{
     list-style-type: none;
 }
-.list{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-}
 
 a{
     text-decoration: none;
     color: black;
 }
-img{
+.logo{
     width: 120px;
     height: 50px;    
 }
@@ -149,7 +142,7 @@ input{
     list-style-type: none;
 }
 
-.filtres ul li{
+.filters_button{
     display: inline-flex;
     align-items: center;
     margin-left: 20px;
@@ -214,14 +207,14 @@ input{
 
 .hotels{
     display: flex;
+    flex-direction: row;
     width: 100%;
 } 
 .titreHebergements{
     padding-top: 15px;
     margin-left: 40px;
 }
-.blocHebergements{
-    display: grid;
+.blocHebergements{/*est ce que je doit rajouter display:grid*/
     background-color: #f2f2f2;
     height: 625px;  
     border-radius: 25px;
@@ -294,7 +287,7 @@ input{
     justify-content: center;
     background-color: #f2f2f2;
     border-radius: 25px;
-    height: auto;                 /*....avant d'appliquer les média queries sa valeur est 625px....*/
+    height: 625px;             
     padding-left: 20px;
     padding-right: 20px;
     margin-left: 2.4%;  
@@ -302,11 +295,13 @@ input{
 .blocPopulaire_marseille{
     margin-top: auto;
 }
+figure .cubePopulaire{
+    margin: 0;
+}
 .imgPopulaire{
     width: 128px;
     height: 145px ;
     object-fit: cover;
-    background-size: 100% 100%;
     border-radius: 15px 0 0 15px; 
 }
 .cubePopulaire{
@@ -315,7 +310,7 @@ input{
     height: 145px;
     padding: 1.5%;
     border-radius: 20px;
-    margin: 0 25px 25px 15px;   
+    margin: 0 25px 25px 15px;  
 }
 .detailPopulaire{
     display: flex;
@@ -341,6 +336,9 @@ input{
     margin-right: 40px;
     margin-left: 20px;
 }
+figure .itemActivites{
+    margin: 0;
+}
 .itemActivites:hover{
     cursor: pointer;
     transform: scale(1.05);
@@ -353,7 +351,7 @@ input{
 .activites ul{
     display: grid;
     width: 99%;
-    height: 500px;
+    height:500px;
     grid-template-columns: repeat(4, 25%);
     column-gap: 30px;
     row-gap: 30px;
@@ -382,10 +380,10 @@ input{
     grid-area: activites_6;
 }
 .activites .itemActivites{
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 100%;
     border-radius: 25px;
     box-shadow: 2px 2px 12px -5px rgb(179, 175, 175);
     margin: 0;
@@ -393,6 +391,7 @@ input{
 }
 .imgActivites{
     object-fit: cover;
+    height: 180px;
     width: 100%;
     border-radius: 25px 25px 0 0;
     margin: 0; 
@@ -459,9 +458,8 @@ input{
         grid-area: blocPopulaires;
     }
     .blocPopulaires ul{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr ;
-        grid-template-rows: 1fr;
+        display: inline-flex;
+    
     }
     .titreIconePopulaire{
         margin-right: 10%;
@@ -485,10 +483,10 @@ input{
         margin-left: 10px;
     } 
     .blocHebergements{
-        width: 100%; 
+        width: 100%;
     }
     .blocHebergements_marseille{
-        width: 98%;
+        width: 96%;
         justify-content: space-evenly;
         margin-left: 1.5%;
     }
@@ -507,11 +505,11 @@ input{
         width: 100%;
         margin-top: -25rem;
         margin-bottom: 12%;
-        padding-top: 5%;
+        padding-top: 20px;
     }
     .activites ul{
         display: grid;
-        width: 105%;/* c'est normal ou pas*/
+        width: 100%;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         grid-template-areas: 
@@ -520,7 +518,7 @@ input{
     }
     .activites .itemActivites{
         display: block;
-        width: 90%;
+        width: 100%;
         height: 240px;
     }
     .titreActivites{
@@ -572,7 +570,41 @@ input{
         padding-left: 2%;
     }  
 }
-@media screen and (max-widht: 900px) {
+@media screen and (max-width: 900px) {
+    #logo{
+       margin-left: -4%; 
+    }
+    .titre_h1{
+        font-size: 23px;
+    }
+    .blocHebergements{
+        height: 40%;
+        width: 96%;
+        margin-top: 0;
+        margin-left: 1rem;
+    }
+    .blocHebergements_marseille{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        padding-left: 5%;
+    }
+    .cubeHebergement{
+        width: 90%;
+        height: auto;
+        margin-left: -25px;
+    }
+    .titreIconePopulaire{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .blocPopulaires ul{
+        flex-direction: column; 
+        width: auto;
+    }
+    
+    
     
 }
 
