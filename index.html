@@ -17,27 +17,27 @@
 		<header>
 			<nav class="navigation">
 				<ul class="navigation-links">
-					<li id="logo"><img class="marginleft logo" src="images/logo/Reservia@3x.png " alt="logo Reservia"></li>
+					<li id="logo"> <a href="index.html" class="logo"></a><img class=" logo" src="images/logo/Reservia@3x.png " alt="logo Reservia"></a></li>
 
-					<li class=" sizeLiens marginHebergements">
-						<a class="liencolor12" href="#hebergements">Hébergements</a>
+					<li class=" sizeLiens ligne_hautbas marginHebergements">
+						<a class="liencolor12" href="#" class="hebergement liste">Hébergements</a>
 					</li>
-					<li class="sizeLiens"><a class="liencolor12" href="#activites">Activités</a></li>
-					<li class="sizeLiens"><a class="liencolor13 bold" href="#inscrire">S'inscrire</a></li>
+					<li class="sizeLiens ligne_hautbas"><a class="liencolor12" href="#" class="activites liste">Activités</a></li>
+					<li class="sizeLiens ligne_haut"><a class="liencolor13 bold" href="#"id="inscription">S'inscrire</a></li>
 				</ul>
 
 			</nav>
 		</header>
 		<main>
-			<section class="descriptionHebergements">
+			<section class="recherche_ville">
 
-				<h1 class="marginleft titre_h1">Trouver votre hébergement pour des vacances de rêve </h1>
-				<p class="marginleft">En plein centre ville ou en plein nature</p>
+				<h1 class="titre_h1">Trouver votre hébergement pour des vacances de rêve </h1>
+				<p class="info">En plein centre ville ou en plein nature</p>
 				<form class="formulaire" method="POST" action="traitement.php">
 
 					<i class="fas fa-map-marker-alt maps"></i>
-					<input class="Recherche" type="text" value="Marseille, France">
-					<input class="bouton" type="submit">Rechercher</input>
+					<input class="recherche" type="text" value="Marseille, France">
+					<input class="bouton" type="submit" value="Rechercher">
 					<button class="logo_loupe" id="logo_loupe">
 					<i class="fas fa-search"></i>
 				</button>
@@ -193,7 +193,7 @@
 								<figcaption class="detailPopulaire">
 									<h4 class="margin">Hôtel le soleil du <br> matin </h4>
 									<p>Nuit à partir de <strong> 128€ </strong></p>
-									<p>
+									<p class="stars">
 										<i class="fas fa-star fa-xs colorBleu"></i>
 										<i class="fas fa-star fa-xs colorBleu"></i>
 										<i class="fas fa-star fa-xs colorBleu"></i>
