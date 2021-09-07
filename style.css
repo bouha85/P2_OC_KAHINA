@@ -24,7 +24,7 @@ a{
 .logo{
     width: 120px;
     height: 50px;
-    margin-left: 20px;    
+    margin-left: 10px;    
 }
 main h4{
         font-size: 16px;
@@ -49,6 +49,7 @@ main h4{
 }
 .liencolor13{
     color: #0065fc;
+    font-weight: bold;
 }
 .liencolor12{
     color: black;
@@ -60,7 +61,7 @@ main h4{
     justify-content: center;
     align-items: center;   
 }
-.navigation-links li:hover{
+.navigation-links .sizeLiens:hover{
     border-top: 3px solid #0065fc;
 }
 .navigation-links li:hover a {
@@ -68,7 +69,6 @@ main h4{
 }
 .marginHebergements{
     margin-left: 55%;
-
 }
 
 /*.....barre de recherche.....*/
@@ -118,9 +118,6 @@ section .titre_h1{
 .bouton:hover{
     cursor: pointer;
     background-color: turquoise;
-}
-.bold{
-      font-weight: bold;
 }
 
 input{
@@ -221,13 +218,14 @@ input{
     width: 100%;
 } 
 .titreHebergements{
-    padding-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 20px;
     margin-left: 40px;
 }
-.blocHebergements{/*est ce que je doit rajouter display:grid*/
+.blocHebergements{
     background-color: #f2f2f2;
     display: grid;
-    width: 70%;
+    width: 73%;
     height: 625px;  
     border-radius: 25px;
     min-width: 375px;
@@ -237,11 +235,11 @@ input{
 }
 .blocHebergements_marseille{
     display: grid;
+    align-items: center;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
     row-gap: 2.5%;
     column-gap: 2.5%;
-    grid-template-rows: 1fr 1fr;
-    align-items: center;
     margin-top: -15px;
     margin-left: 50px;
     padding-left: 10px;
@@ -255,16 +253,13 @@ input{
  } 
 
 .cubeHebergement{
-    display: flex;
+    display: block;
     flex-direction: column;
-    width: 220px;
-    height: 200px;
     border: 3px solid transparent;
     background-color: white;
     box-shadow: 0px 4px 5px 0 #e2e2e2;
     border-radius: 20px;
     margin-left: -25px;
-    padding: 1% 1% 2% 1%;
     margin-top: 0;   
 }
 .detailHebergements{
@@ -300,7 +295,7 @@ input{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 30%;
+    width: 27%;
     background-color: #f2f2f2;
     border-radius: 25px;
     height: 625px;             
@@ -332,7 +327,7 @@ figure .cubePopulaire{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 220px;
+    width: 168px;
     line-height: 80%;
     padding-left: 20px;
     margin-left: 10px;  
@@ -367,7 +362,7 @@ figure .itemActivites{
 }
 .activites ul{
     display: grid;
-    width: 98%;
+    width: 96%;
     height:500px;
     grid-template-columns: repeat(4, 25%);
     column-gap: 30px;
@@ -439,7 +434,7 @@ figure .itemActivites{
     height: 150px;
 }
 .marginItems1{
-    margin-left: 8%; 
+    margin-left: 10%; 
 }
 .marginItems3{
     margin-right: 20%;
@@ -452,9 +447,13 @@ footer a:hover{
 }
 
 /*.....Média Queries.....*/
+
 @media screen and (max-width:1440px) {
     .container{
         display: block;
+    }
+    .logo{
+        margin-left: 10px;
     }
     header, .recherche_ville{
         margin-left: 1%;
@@ -476,32 +475,29 @@ footer a:hover{
     }
     .blocPopulaires ul{
         display: inline-flex;
-
     }
-    .titreIconePopulaire{
-        margin-right: 10%;
-    }
-    .cubeDetailPopulaire{
-        min-height: 150px;
+    .cubePopulaire{
+        width: 95%;
+        margin-inline-end: 0;
+        margin-inline-start: 17px;
     }
     .cubePopulaire> .imgPopulaire{
         height: auto;
+        width: 35%;
     }
     .blocPopulaires{
-        display: grid;
-        width: 95%;
-        height: 100%;
+        width: 92%;
+        height: auto;
         margin-top: 1.5%;
-        padding-left: 15px;
-        padding-right: 15px;
     }
     .detailPopulaire{
+        width: auto;
         padding-left: 0;
         margin-left: 20px;
     }
     .titreIconePopulaire{
-        margin-right: 20px;
-        margin-left: 5px;
+        margin-right: 37px;
+        margin-left: 17px;
     }
     .titrePopulaire{
         margin-left: 10px;
@@ -513,16 +509,17 @@ footer a:hover{
         
     }
     .blocHebergements_marseille{
-        width: 100%;
+        width: 95%;
         justify-content: space-evenly;
         height: auto;  
+        
     }
    
-    .cubeHebergement{
-        display: flex;
+    li figure .cubeHebergement{
+        display: inline-flex;
         width: 80%;
-        height: 190px;
-        margin-left: 15px;
+        justify-content: center;
+        align-content: center;
     }
     .cubeHebergement> .imgHebergements{
         width: 100%;
@@ -580,45 +577,43 @@ footer a:hover{
     .imgActivites{
         height: 180px;
     }
-    .items-footre{
-        padding-left: -3.5%;
+    .marginItems1{
+        margin-left: 5%;
     }
     #contenu-footer{
-        margin-top: 40px;
+        margin-top: -12px;
     }   
 }
-@media screen and (max-width: 1200px){
-     #logo{
-         margin-left: -2%;
-     }
-    .filtres ul li{
-        margin-left: 12px;
+
+@media screen and (max-width: 1250px) {
+    #logo{
+       margin-left:5px; 
     }
-    .blocHebergements{
-        width: 99%;
+    .marginHebergements{
+        margin-left: 35%;
+    }
+    .filtres{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .blocPopulaires{
+        width: 90%;
     }
     .activites{
-        width: 97%;
-    }
-    .contenu-footer{
-        width: 100%;
-    } 
-    .items-footre{
-        padding-left: 2%;
-    }  
-}
-@media screen and (max-width: 1025px) {
-    #logo{
-       margin-left:0; 
-    }
+        width: 93%;
+    }   
     .titre_h1{
         font-size: 23px;
     }
     .blocHebergements{
         height: 50%;
-        width: 98%;
-        margin-top: 0;
-        margin-left: 1rem;
+        width: 93.5%;
+        margin-top: -32px;
+        margin-left: 1.75rem;
+    }
+    .titreHebergements{
+        margin-bottom: -30px;
     }
     .blocHebergements_marseille{
         display: grid;
@@ -630,7 +625,11 @@ footer a:hover{
     .cubeHebergement{
         width: 90%;
         height: auto;
-        margin-left: -25px;
+        margin-left: -55px;
+    }
+    .show_more{
+        margin-top: 0;
+        margin-bottom: -3%;
     }
     .titreIconePopulaire{
         display: flex;
@@ -639,23 +638,25 @@ footer a:hover{
     }
     .blocPopulaires ul{
         flex-direction: column; 
-        width: 96%;
+        width: 97%;
     }
     .activites{
-        width: 97%;
-        margin-top: -60rem;
-        margin-bottom: -7%;
+        width: 98%;
+        margin-top: -66rem;
+        margin-bottom: -24%;
     }
+    
+    
      #activites ul{
          display: grid;
          grid-template-columns: 1fr 1fr;
          grid-template-rows: 1fr 1fr 1fr;
-         margin: 0 10px 550px 0px;
+         margin: 0 10px 661px 0px;
          grid-template-areas: 
          "activites_1 activites_2"
          "activites_4 activites_3"
          "activites_5 activites_6";
-        width: 100%; 
+        
      }
     .itemActivites{
         width: 100%;
@@ -663,72 +664,103 @@ footer a:hover{
     }  
 }
 
-@media screen and(max-width:665px){
-    nav{
-        height: 100%;
+@media screen and (max-width: 540px){
+
+    .navigation-links{
+        flex-wrap: wrap;
     }
-    nav a
-    {
-        display: flex;
-        width: 100%;
+    .navigation-links .nav_activites{
+        order: 3;
+        display: inline-flex;
+        width: 50%;
+        text-align: center;
+      
+    }
+    .marginHebergements{
+        margin-left: 0;
+    }
+    .navigation-links .nav_hebergements{
+        order: 2;
+        display: inline-flex;
+        width: 50%;
+        text-align: center;
+    }
+    .navigation-links .nav_activites:hover, .navigation-links .nav_hebergements:hover{
+        border-top:none ;
+        border-bottom: 3px solid #0065fc;
+    }
+    .navigation-links .nav_activites, .navigation-links .nav_hebergements{
+        border-bottom: 3px solid #ccc;
         justify-content: center;
     }
-    nav ul .inscription
-    {
-        padding: 0 !important;
-        width: 120px;
+    
+    nav ul .nav_inscription:hover{
+        border-top: 3px solid #0065fc;
     }
-    nav ul .logo
-    {
-        justify-content: flex-start;
-        margin-left: 15px;
-    }
-    nav ul {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        justify-content: stretch;
-        align-items: center;
-        width: auto;
-    }
-    nav ul li:nth-child(1)
-    {
-        grid-column: 1/ span 1;
-        grid-row: 1/ span 1;
-    }
-    nav ul li:nth-child(2)
-    {
-        grid-column: 1/ span 2;
-        grid-row: 2/ span 1;
-        width: 50%;
-    }
-    nav ul li:nth-child(3)
-    {
-        grid-column: 2/ span 1;
-        grid-row: 2/ span 1;
-    }
-    nav ul li:nth-child(4)
-    {
-        grid-column: 2/ span 1;
-        grid-row: 1/ span 1;
-        justify-self: end;
-    }
-    nav ul .ligne_hautbas:hover{
-        border-bottom: 2px solid #0065FC !important;
-        border-top: none;
-    }
-    nav ul .ligne_hautbas{
-        border-bottom: 2px solid #ccc;
-        border-top: none;
-    }
-    #logo_loupe
-    {
-        display: initial;
-    }
-    .bouton
-    {
+    
+    .bouton{
         display: none;
+    }
+    #logo_loupe{
+    display: block;
+    font-size: 18px;
+    color: white;
+    background-color: #0065fc;
+    padding: 16px;
+    margin-left: -0.5em;
+    border: transparent;
+    border-radius: 15px;
+    }
+    .blocPopulaires{
+        border-radius: initial;
+    }
+    .blocHebergements{
+        background-color: initial;
+        margin-top: -13%;
+    }
+    .blocHebergements_marseille{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,1fr);
+        row-gap: 1%;
+        margin-left: 38px;
+    }
+    .show_more {
+        margin-top: 69px;
+        margin-left: -4%;
+    }
+    #activites ul{
+        display: grid;
+        margin-top: 3%;
+        width: 90%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+        "activites_1"
+        "activites_2"
+        "activites_3"
+        "activites_4"
+        "activites_5"
+        "activites_6";
+    }
+    .activites h2{
+        margin-top: 147%;
+    }
+    #contenu-footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        height: auto;
+        margin-top: 81rem;
+    } 
+    .marginItems2{
+        margin-left: 20px;
+    }
+    .marginItems3{
+        margin-left: 20px;
     }
     
 }
-
+  
