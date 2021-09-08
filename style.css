@@ -476,22 +476,26 @@ footer a:hover{
     .blocPopulaires ul{
         display: inline-flex;
     }
-    .cubePopulaire{
-        width: 95%;
-        margin-inline-end: 0;
-        margin-inline-start: 17px;
+    .cubeDetailPopulaire{
+       min-height: 150px;
     }
+    .cubePopulaire{
+        width: 90%;
+        margin: 40px;
+    }
+    
     .cubePopulaire> .imgPopulaire{
-        height: auto;
-        width: 35%;
+        height: auto; 
     }
     .blocPopulaires{
         width: 92%;
         height: auto;
         margin-top: 1.5%;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .detailPopulaire{
-        width: auto;
+       
         padding-left: 0;
         margin-left: 20px;
     }
@@ -505,8 +509,7 @@ footer a:hover{
     .blocHebergements{
         width: 95%;
         margin-left: 30px;
-        
-        
+   
     }
     .blocHebergements_marseille{
         width: 95%;
@@ -589,6 +592,9 @@ footer a:hover{
     #logo{
        margin-left:5px; 
     }
+    .titre_h1{
+        font-size: 23px;
+    }
     .marginHebergements{
         margin-left: 35%;
     }
@@ -600,12 +606,13 @@ footer a:hover{
     .blocPopulaires{
         width: 90%;
     }
+    .cubePopulaire{
+        padding: 0.75%;
+    }
     .activites{
         width: 93%;
     }   
-    .titre_h1{
-        font-size: 23px;
-    }
+    
     .blocHebergements{
         height: 50%;
         width: 93.5%;
@@ -696,6 +703,14 @@ footer a:hover{
     
     nav ul .nav_inscription:hover{
         border-top: 3px solid #0065fc;
+    }
+    .formulaire{
+        margin-left: 0.2em;
+        margin-top: 4%;
+    }
+    .recherche{
+        width: 240px;
+        height: 44px;
     }
     
     .bouton{
