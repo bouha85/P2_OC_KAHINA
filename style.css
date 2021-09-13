@@ -5,6 +5,7 @@ body{
     margin: 0;
     padding: 0;
 }
+
 img{
     object-fit: cover;
 }
@@ -12,6 +13,7 @@ img{
     max-width: 1400px;
     margin: 0 auto;
 }
+
 ul{
     padding-inline-start: 0;
 }
@@ -24,11 +26,13 @@ a{
     text-decoration: none;
     color: black;
 }
+
 .logo{
     width: 120px;
     height: 50px;
     margin-left: 10px;    
-}
+} 
+
 main h4{
         font-size: 16px;
         font-weight: bold;
@@ -188,6 +192,7 @@ input{
 
 
 /*.....Icone information.....*/
+
 
 .information{
     display: flex;
@@ -494,18 +499,11 @@ footer a:hover{
     .blocPopulaires ul{
         display: inline-flex;
     }
-    /*.cubeDetailPopulaire{
-       min-height: 150px;
-    }*/
-    /*.detailPopulaire{
-        width: initial;
-    }*/
     .cubePopulaire{
         width: 95%;
         margin-inline-end: 0;
         margin-inline-start: 17px;
     }
-    
     .cubePopulaire> .imgPopulaire{
         height: auto; 
         width: 35%;
@@ -514,8 +512,6 @@ footer a:hover{
         width: 92%;
         height: auto;
         margin-top: 1.5%;
-        /*padding-left: 15px;
-        padding-right: 15px;*/
     }
     .detailPopulaire{
         width: auto;
@@ -549,7 +545,6 @@ footer a:hover{
         width: 100%;
         height: 100px;
     }
-    
     .show_more{
         margin-top: 20px;
     }
@@ -579,22 +574,6 @@ footer a:hover{
     .h2_titreActivites{
         margin-left: 2%;   
     }
-    /*.activites_1{
-        grid-area: activites_1;
-    }
-    
-    .activites_3{
-        grid-area: activites_3;
-    }
-    .activites_4{
-        grid-area: activites_4;
-    }
-    .activites_5{
-        grid-area: activites_5;
-    }
-    .activites_6{
-        grid-area: activites_6;
-    }*/
     .imgActivites{
         height: 180px;
     }
@@ -667,10 +646,6 @@ footer a:hover{
         flex-direction: column; 
         width: 97%;
     }
-    /*.cubePopulaire {
-        width: 96%;
-        margin: 20px;
-    }*/
     .activites{
         width: 98%;
         margin-top: -66rem;
@@ -678,7 +653,7 @@ footer a:hover{
         margin-left: 15px;
     }
     .activites h2 {
-        margin-top: 19%;
+        margin-top: 39%;
     }
      #activites ul{
          display: grid;
@@ -710,8 +685,7 @@ footer a:hover{
         order: 3;
         display: inline-flex;
         width: 50%;
-        text-align: center;
-      
+        text-align: center; 
     }
     .marginHebergements{
         margin-left: 0;
@@ -730,19 +704,13 @@ footer a:hover{
         border-bottom: 3px solid #ccc;
         justify-content: center;
     }
-    
     nav ul .nav_inscription:hover{
         border-top: 3px solid #0065fc;
     }
-    /*.formulaire{
-        margin-left: 0.2em;
-        margin-top: 4%;
-    }*/
     .recherche{
         width: 180px;
         height: 50px;
     }
-    
     .bouton{
         display: none;
     }
@@ -800,7 +768,7 @@ footer a:hover{
         "activites_6";
     }
     .activites h2{
-        margin-top: 767px;
+        margin-top: 825px;
     }
     #contenu-footer{
         display: flex;
@@ -815,8 +783,7 @@ footer a:hover{
     }
     .marginItems3{
         margin-left: 20px;
-    }
-    
+    }   
 }
 @media screen and (max-width: 400px){
     
