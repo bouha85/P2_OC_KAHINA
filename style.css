@@ -729,12 +729,6 @@ footer a:hover{
         margin-left: 20px;
         padding: 0;
     }
-    .cubePopulaire {
-        width: inherit;
-    }
-    img .imgPopulaire{
-        width: 35%;
-    }
     .titreHebergements {
         margin-bottom: 2rem;
         margin-left: 3%;
@@ -788,16 +782,16 @@ footer a:hover{
         margin-left: 20px;
     }   
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 430px){
 
-    .blocPopulaires{
-        margin-left: 20px;
+    .blocPopulaires li{
+        margin-left: -5px;
+        margin-right: 10px;
     }
     .blocHebergements{
-        margin-left: 28px ;
+        margin-left: 27px ;
     }
     #activites ul{
-        margin-left: -11px;
         width: 87%;
         margin-left: 5px;
     }
