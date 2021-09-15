@@ -732,6 +732,9 @@ footer a:hover{
     .cubePopulaire {
         width: inherit;
     }
+    img .imgPopulaire{
+        width: 35%;
+    }
     .titreHebergements {
         margin-bottom: 2rem;
         margin-left: 3%;
@@ -792,7 +795,6 @@ footer a:hover{
     }
     .blocHebergements{
         margin-left: 28px ;
-
     }
     #activites ul{
         margin-left: -11px;
