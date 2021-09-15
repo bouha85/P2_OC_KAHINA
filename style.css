@@ -707,7 +707,8 @@ footer a:hover{
         border-top: 3px solid #0065fc;
     }
     .recherche{
-        width: 240px;
+        max-width: 240px;
+        min-width: 180px;
         height: 50px;
     }
     .bouton{
