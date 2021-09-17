@@ -26,7 +26,7 @@ ul{
 }
 
 li{
-    overflow: hidden;
+    /*overflow: hidden;*/
     list-style-type: none;
 }
 
